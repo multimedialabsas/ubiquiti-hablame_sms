@@ -56,10 +56,10 @@ class Plugin
     public function run(): void
     {
         if (PHP_SAPI === 'fpm-fcgi') {
-            $this->logger->info('Twilio SMS over HTTP started');
+            $this->logger->info('Hablame SMS over HTTP started');
             $this->processHttpRequest();
         } elseif (PHP_SAPI === 'cli') {
-            $this->logger->info('Twilio SMS over CLI started');
+            $this->logger->info('Hablame SMS over CLI started');
             $this->processCli();
         } else {
             throw new \UnexpectedValueException('Unknown PHP_SAPI type: ' . PHP_SAPI);

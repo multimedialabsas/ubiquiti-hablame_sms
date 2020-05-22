@@ -5,32 +5,32 @@
 * Solo envía SMS a clientes que tienen un número de teléfono establecido en los detalles de sus contactos.
 * Se requiere una cuenta [Hablame] (https://www.hablame.co/) para acceder a su API.
 
-## Configuration
+# Configuration
 
 * Instale el complemento en UCRM y habilítelo. Es decir. descargue el repositorio completo y cárguelo en UCRM en Sistema> Complementos.
 * Mantenga el período de ejecución en "no ejecutar automáticamente": el complemento reaccionará a los eventos de webhook.
-* Configure con los datos que obtiene de [Twilio Console] (https://www.hablame.co):
-   * Cuenta SID
-   * Token de autenticación
+* Configure con los datos que obtiene de [Hablame] (https://www.hablame.co):
+* Cuenta SID
+* Token de autenticación
    
 * Personaliza los textos que deseas enviar a un cliente cuando ocurre un evento
-   * Cada evento tiene su propia fila
-   * La fila vacía significa "no enviar SMS para esto"
-   * Es posible reemplazar variables predefinidas: `%% some.variable %%`, vea la lista completa a continuación
-   * Si no se establece una variable para un cliente, se reemplaza con una cadena vacía
+* Cada evento tiene su propia fila
+* La fila vacía significa "no enviar SMS para esto"
+* Es posible reemplazar variables predefinidas: `%% some.variable %%`, vea la lista completa a continuación
+* Si no se establece una variable para un cliente, se reemplaza con una cadena vacía
 * Guardar la configuración
 * Habilitar el complemento
 * Agregar webhook (botón al lado de URL pública)
 * Guardar webhook usando los valores predeterminados
   * Opcionalmente, seleccione eventos sobre los cuales notificar a los clientes
 
-## Uso
+# Uso
 * En el administrador de UCRM, vaya a Sistema / Webhooks / Endpoints
 * Haga clic en Test Endpoint
-* Vaya a Sistema / Complementos / notificaciones por SMS a través de Twilio
+* Vaya a Sistema / Complementos / notificaciones por SMS a través de Hablame
 * En la salida del registro, verá `Prueba de Webhook exitosa`.
 
-## Variables reemplazadas
+# Variables reemplazadas
 
 Estos se cargan desde la API UCRM y reflejan la estructura devuelta.
 Las variables del cliente se reemplazan siempre; factura de pago y servicio solo con los eventos aplicables.

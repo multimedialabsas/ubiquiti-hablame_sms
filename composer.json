@@ -1,5 +1,5 @@
 {
-  "description": "UCRM plugin for SMS notifications, powered by Twilio",
+  "description": "UCRM plugin para SMS Hablame Colombia, powered by Hablame",
   "version": "1.0.1",
   "license": "MIT",
   "autoload": {

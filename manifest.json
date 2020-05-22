@@ -1,11 +1,11 @@
 {
   "version": "1",
   "information": {
-    "name": "sms-twilio",
-    "displayName": "SMS notifications via Twilio",
-    "description": "This plugin sends SMS notifications via Twilio. NOTE: only phone numbers in the international format can be used, e.g. +155 555 1234",
-    "url": "https://github.com/Ubiquiti-App/UCRM-plugins/tree/master/plugins/sms-twilio",
-    "version": "1.0.8",
+    "name": "sms-hablame",
+    "displayName": "SMS notifications via Hablame",
+    "description": "Este complemento envía notificaciones por SMS a través de Hablame Colombia.",
+    "url": "https://gitlab.com/multimedialab/geolink/ubiquiti-hablame_sms",
+    "version": "1.0.0",
     "ucrmVersionCompliancy": {
       "min": "2.14.0-beta",
       "max": null
@@ -14,25 +14,25 @@
       "min": "1.0.0-dev.1",
       "max": null
     },
-    "author": "Ubiquiti Networks, Inc."
+    "author": "Geolink"
   },
   "configuration": [
     {
       "key": "twilioAccountSid",
-      "label": "Twilio Account Sid",
-      "description": "Account SID obtained from twilio.com/console",
+      "label": "Hablame Account Sid",
+      "description": "Account SID suministrado por Hablame Colombia",
       "required": 1
     },
     {
       "key": "twilioAuthToken",
-      "label": "Twilio Auth Token",
-      "description": "Auth Token obtained from twilio.com/console",
+      "label": "Hablame Auth Token",
+      "description": "Auth Token suministrado por Hablame Colombia",
       "required": 1
     },
     {
       "key": "twilioSmsNumber",
-      "label": "Twilio SMS number",
-      "description": "A Twilio phone number you purchased at twilio.com/console",
+      "label": "Hablame SMS number",
+      "description": "A Hablame",
       "required": 1
     },
     {
